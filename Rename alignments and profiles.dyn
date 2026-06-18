@@ -3871,13 +3871,7 @@
     {
       "NodeId": "6ab04df4-be69-402b-9083-e7a23bd54815",
       "Binding": {
-        "get_Profiles_InClassDecl-1_InFunctionScope-1_Instance0_6ab04df4-be69-402b-9083-e7a23bd54815": "H4sIAAAAAAAACouuVspLLS5JTXFJLElUsoquVkoBM5QMDd3cDJVqY2tjAdppuYYjAAAA"
-      }
-    },
-    {
-      "NodeId": "87614892-1f8f-4b07-879f-fb38e43227d6",
-      "Binding": {
-        "get_Profiles_InClassDecl-1_InFunctionScope-1_Instance0_87614892-1f8f-4b07-879f-fb38e43227d6": "H4sIAAAAAAAACouuVspLLS5JTXFJLElUsoquVkoBM5QMDd3cDJVqY2tjAdppuYYjAAAA"
+        "get_Profiles_InClassDecl-1_InFunctionScope-1_Instance0_6ab04df4-be69-402b-9083-e7a23bd54815": "H4sIAAAAAAAACouuVspLLS5JTXFJLElUsoqurtWpVkoBs5UMjQxMnJRqY2tjAQVEOmYmAAAA"
       }
     }
   ],
@@ -5259,26 +5253,6 @@
         "Background": "#FFC1D676"
       },
       {
-        "Id": "d5584c9d363941529a042578c095ddc0",
-        "Title": "UI",
-        "DescriptionText": "Description <Double click here to edit group description>",
-        "IsExpanded": true,
-        "WidthAdjustment": 0.0,
-        "HeightAdjustment": 0.0,
-        "Nodes": [],
-        "HasNestedGroups": false,
-        "Left": -6172.462635200945,
-        "Top": 1175.5604832860336,
-        "Width": 0.0,
-        "Height": 0.0,
-        "FontSize": 36.0,
-        "GroupStyleId": "883066aa-1fe2-44a4-9bd1-c3df86bfe9f6",
-        "InitialTop": 2049.5604832860336,
-        "InitialHeight": 145.0,
-        "TextblockHeight": 864.0,
-        "Background": "#FFFFB8D8"
-      },
-      {
         "Id": "f7b68fd9e61f4b9db09c4a6a6628052a",
         "Title": "Assembly selection types",
         "DescriptionText": "Description <Double click here to edit group description>",
@@ -5498,13 +5472,33 @@
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
         "InitialTop": 2059.816565788661,
-        "InitialHeight": 255.6132530550767,
+        "InitialHeight": 252.85794476779665,
         "TextblockHeight": 106.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d5584c9d363941529a042578c095ddc0",
+        "Title": "UI",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": -6172.462635200945,
+        "Top": 1175.5604832860336,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 4136.807722116291,
-    "Y": -1799.3068165368713,
-    "Zoom": 0.9772709492801337
+    "X": 4613.455242908823,
+    "Y": -829.5617328353636,
+    "Zoom": 0.6319559220217857
   }
 }
