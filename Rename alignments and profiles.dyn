@@ -635,54 +635,6 @@
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "Id": "c896c01a562d4038b3ae8d296584a10e",
-      "NodeType": "FunctionNode",
-      "Inputs": [
-        {
-          "Id": "6996f15aa9184bce8abaa5a4a3dec593",
-          "Name": "document",
-          "Description": "Document",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "7cbbc07666bb4fd9ace34485845aac8c",
-          "Name": "command",
-          "Description": "string",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "3448fd2f25c64000b5d9bd4ba8a9f851",
-          "Name": "echoInCommandLine",
-          "Description": "Show the command in the command line?\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "47d25f1c40c0443591c40ca240e5315d",
-          "Name": "bool",
-          "Description": "bool",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "FunctionSignature": "Camber.AutoCAD.Document.SendCommand@Autodesk.AutoCAD.DynamoNodes.Document,string,bool",
-      "Replication": "Auto",
-      "Description": "Executes a particular command string. Returns true if the command was executed successfully and false otherwise. Ensure that a space or \\n is included at the end of any string that you wish to be executed.\n\nDocument.SendCommand (document: Document, command: string, echoInCommandLine: bool = true): bool"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "Id": "b9cc4f045d14487c9480aca22890315f",
       "NodeType": "FunctionNode",
       "Inputs": [],
@@ -1392,28 +1344,6 @@
       "FunctionSignature": "DSCore.List.FilterByBoolMask@var[]..[],var[]..[]",
       "Replication": "Auto",
       "Description": "Filters a sequence by looking up corresponding indices in a separate list of booleans.\n\nList.FilterByBoolMask (list: var[]..[], mask: var[]..[]): var[]..[]"
-    },
-    {
-      "ConcreteType": "Autodesk.AutoCAD.DynamoNodes.ObjectsSelection, Autodesk.Civil3DToolkitUI",
-      "NodeType": "ExtensionNode",
-      "InstanceId": [
-        "11FD8"
-      ],
-      "Id": "00928fdd0eb746c78d5003087b5d36fc",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "a5997089979b4e68871e2967c7dc1069",
-          "Name": "Objects",
-          "Description": "Objects",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Returns a selection of objects"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -2956,37 +2886,6 @@
       "Description": "Get all profiles from the alignment.\n\nAlignment.Profiles: Profile[]"
     },
     {
-      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "WatchWidth": 200.0,
-      "WatchHeight": 38.0,
-      "Id": "36a165d4b8e84645bdcb42d319e9b4d6",
-      "NodeType": "ExtensionNode",
-      "Inputs": [
-        {
-          "Id": "df201c5194fb4b558a2f99b84d405b8a",
-          "Name": "",
-          "Description": "Node to show output from",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "f7fb9793d6fb4a6ba37b814a8690826e",
-          "Name": "",
-          "Description": "Node output",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Visualizes a node's output"
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "Id": "1b18ed90f3f3418a82283d5caa262a2b",
       "NodeType": "CodeBlockNode",
@@ -3066,8 +2965,8 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "WatchWidth": 200.0,
-      "WatchHeight": 200.0,
+      "WatchWidth": 523.0,
+      "WatchHeight": 208.0,
       "Id": "3841b42e435e4d41a8898c6e5365a7e8",
       "NodeType": "ExtensionNode",
       "Inputs": [
@@ -3172,6 +3071,107 @@
       "FunctionSignature": "DSCore.List.Flatten@var[]..[],int",
       "Replication": "Auto",
       "Description": "Flattens a nested list of lists by a certain amount.\n\nList.Flatten (list: var[]..[], amount: int = -1): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "c896c01a562d4038b3ae8d296584a10e",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "6996f15aa9184bce8abaa5a4a3dec593",
+          "Name": "document",
+          "Description": "Document",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7cbbc07666bb4fd9ace34485845aac8c",
+          "Name": "command",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3448fd2f25c64000b5d9bd4ba8a9f851",
+          "Name": "echoInCommandLine",
+          "Description": "Show the command in the command line?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "47d25f1c40c0443591c40ca240e5315d",
+          "Name": "bool",
+          "Description": "bool",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Camber.AutoCAD.Document.SendCommand@Autodesk.AutoCAD.DynamoNodes.Document,string,bool",
+      "Replication": "Auto",
+      "Description": "Executes a particular command string. Returns true if the command was executed successfully and false otherwise. Ensure that a space or \\n is included at the end of any string that you wish to be executed.\n\nDocument.SendCommand (document: Document, command: string, echoInCommandLine: bool = true): bool"
+    },
+    {
+      "ConcreteType": "Autodesk.AutoCAD.DynamoNodes.ObjectsSelection, Autodesk.Civil3DToolkitUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "11FD8"
+      ],
+      "Id": "00928fdd0eb746c78d5003087b5d36fc",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a5997089979b4e68871e2967c7dc1069",
+          "Name": "Objects",
+          "Description": "Objects",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Returns a selection of objects"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 200.0,
+      "WatchHeight": 200.0,
+      "Id": "69dec75aadec431095460805b5120306",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "e2611704ce2f47218139f0048ca5348a",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "746862122d354bfdbeef52dd7a919df5",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualizes a node's output"
     }
   ],
   "Connectors": [
@@ -3467,18 +3467,6 @@
       "Start": "d2949ceaf533420ea6438c617b784b32",
       "End": "ef99ac966d024506b44c6c2185a80dfa",
       "Id": "1fb8a9c85dd741a89d7d511038b4d62f",
-      "IsHidden": "False"
-    },
-    {
-      "Start": "a5997089979b4e68871e2967c7dc1069",
-      "End": "4d50a3553f814683b15ec9927fa2fe03",
-      "Id": "3126f79c2267433c9f214f5f1a79446c",
-      "IsHidden": "False"
-    },
-    {
-      "Start": "a5997089979b4e68871e2967c7dc1069",
-      "End": "f9c37b2f8446468b8b0849a805b419a5",
-      "Id": "b86d22f9efbd4e0c8ad89c761e994f24",
       "IsHidden": "False"
     },
     {
@@ -3812,6 +3800,12 @@
       "IsHidden": "False"
     },
     {
+      "Start": "bb01dab9bffe44b8b380c97159efc497",
+      "End": "e2611704ce2f47218139f0048ca5348a",
+      "Id": "66a62968220942c18931a7e980f17d35",
+      "IsHidden": "False"
+    },
+    {
       "Start": "6fd6e3a81c08429ba39ec598ef65ec77",
       "End": "c05d7dd1db1e4495a3a8168a276d42ca",
       "Id": "6155eefaab634babaed62511b27f5767",
@@ -3821,6 +3815,18 @@
       "Start": "a07ed847fb0f424b898f1660bb20bbfe",
       "End": "83f1adeb9c3a4d33898fdd414caaff6a",
       "Id": "a93f226ba37e4a88892fbbcfc5b52b4d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a5997089979b4e68871e2967c7dc1069",
+      "End": "4d50a3553f814683b15ec9927fa2fe03",
+      "Id": "3126f79c2267433c9f214f5f1a79446c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a5997089979b4e68871e2967c7dc1069",
+      "End": "f9c37b2f8446468b8b0849a805b419a5",
+      "Id": "b86d22f9efbd4e0c8ad89c761e994f24",
       "IsHidden": "False"
     }
   ],
@@ -4057,16 +4063,6 @@
         "ShowGeometry": true,
         "X": 3639.603088112391,
         "Y": 1742.3769801043748
-      },
-      {
-        "Id": "c896c01a562d4038b3ae8d296584a10e",
-        "Name": "Document.SendCommand",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 9607.685101953131,
-        "Y": 1942.7845744415583
       },
       {
         "Id": "b9cc4f045d14487c9480aca22890315f",
@@ -4337,16 +4333,6 @@
         "ShowGeometry": true,
         "X": -4816.730195556523,
         "Y": 2060.7699285051594
-      },
-      {
-        "Id": "00928fdd0eb746c78d5003087b5d36fc",
-        "Name": "1b_Select alignments",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": -6162.462635200945,
-        "Y": 2049.5604832860336
       },
       {
         "Id": "cd91f724c0a3437e82f54acd341b15c3",
@@ -4839,16 +4825,6 @@
         "Y": 2166.4731128182225
       },
       {
-        "Id": "36a165d4b8e84645bdcb42d319e9b4d6",
-        "Name": "Watch",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": -2588.2865101472194,
-        "Y": 2209.905131151593
-      },
-      {
         "Id": "1b18ed90f3f3418a82283d5caa262a2b",
         "Name": "Code Block",
         "IsSetAsInput": false,
@@ -4866,7 +4842,7 @@
         "Excluded": false,
         "ShowGeometry": true,
         "X": -3880.8242345550034,
-        "Y": 2057.061257501381
+        "Y": 2059.816565788661
       },
       {
         "Id": "3841b42e435e4d41a8898c6e5365a7e8",
@@ -4897,6 +4873,36 @@
         "ShowGeometry": true,
         "X": -4132.882514953497,
         "Y": 2167.674510556458
+      },
+      {
+        "Id": "c896c01a562d4038b3ae8d296584a10e",
+        "Name": "Document.SendCommand",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "ShowGeometry": true,
+        "X": 9607.685101953131,
+        "Y": 1942.7845744415583
+      },
+      {
+        "Id": "00928fdd0eb746c78d5003087b5d36fc",
+        "Name": "1b_Select alignments",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -6162.462635200945,
+        "Y": 2049.5604832860336
+      },
+      {
+        "Id": "69dec75aadec431095460805b5120306",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -3401.1117639019526,
+        "Y": 2180.876059097848
       }
     ],
     "Annotations": [
@@ -5046,7 +5052,6 @@
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
         "Nodes": [
-          "c896c01a562d4038b3ae8d296584a10e",
           "b9cc4f045d14487c9480aca22890315f",
           "0c7153ce52bb4b0ba0569849e79972b0",
           "82bd61240e2d414fad6c4e544b96532f"
@@ -5054,8 +5059,8 @@
         "HasNestedGroups": false,
         "Left": 8814.971645477215,
         "Top": 1732.7868872797674,
-        "Width": 1079.7134564759162,
-        "Height": 406.99768716179074,
+        "Width": 642.2175121797027,
+        "Height": 405.82281789544027,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
         "InitialTop": 1805.7868872797674,
@@ -5249,7 +5254,7 @@
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
         "InitialTop": 2060.7699285051594,
-        "InitialHeight": 278.2814246069995,
+        "InitialHeight": 278.28142460699974,
         "TextblockHeight": 63.0,
         "Background": "#FFC1D676"
       },
@@ -5260,19 +5265,17 @@
         "IsExpanded": true,
         "WidthAdjustment": 0.0,
         "HeightAdjustment": 0.0,
-        "Nodes": [
-          "00928fdd0eb746c78d5003087b5d36fc"
-        ],
+        "Nodes": [],
         "HasNestedGroups": false,
         "Left": -6172.462635200945,
-        "Top": 1967.5604832860336,
-        "Width": 252.0,
-        "Height": 233.0,
+        "Top": 1175.5604832860336,
+        "Width": 0.0,
+        "Height": 0.0,
         "FontSize": 36.0,
         "GroupStyleId": "883066aa-1fe2-44a4-9bd1-c3df86bfe9f6",
         "InitialTop": 2049.5604832860336,
-        "InitialHeight": 144.99999999999977,
-        "TextblockHeight": 72.0,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 864.0,
         "Background": "#FFFFB8D8"
       },
       {
@@ -5471,7 +5474,7 @@
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
         "InitialTop": 1445.3582485308475,
-        "InitialHeight": 339.13653492468666,
+        "InitialHeight": 292.13653492468666,
         "TextblockHeight": 63.0,
         "Background": "#FFC1D676"
       },
@@ -5489,19 +5492,19 @@
         ],
         "HasNestedGroups": false,
         "Left": -4468.948381370834,
-        "Top": 1941.061257501381,
+        "Top": 1943.8165657886611,
         "Width": 867.1241468158305,
-        "Height": 388.6132530550767,
+        "Height": 385.85794476779665,
         "FontSize": 36.0,
         "GroupStyleId": "00000000-0000-0000-0000-000000000000",
-        "InitialTop": 2057.061257501381,
-        "InitialHeight": 302.6132530550765,
+        "InitialTop": 2059.816565788661,
+        "InitialHeight": 255.6132530550767,
         "TextblockHeight": 106.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 5061.391614334173,
-    "Y": -1333.9102294271956,
-    "Zoom": 1.3214163663067755
+    "X": 4136.807722116291,
+    "Y": -1799.3068165368713,
+    "Zoom": 0.9772709492801337
   }
 }
